@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolos de Cibersegurança</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #808080;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Protocolos de Cibersegurança</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Protocolo</th>
+                <th>Descrição</th>
+                <th>Utilização</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SSL/TLS</td>
+                <td>Secure Sockets Layer/Transport Layer Security</td>
+                <td>Comunicação segura em websites (HTTPS)</td>
+            </tr>
+            <tr>
+                <td>IPsec</td>
+                <td>Internet Protocol Security</td>
+                <td>Segurança em comunicações de rede, VPN</td>
+            </tr>
+            <tr>
+                <td>SSH</td>
+                <td>Secure Shell</td>
+                <td>Acesso seguro a servidores remotos</td>
+            </tr>
+            <tr>
+                <td>WPA3</td>
+                <td>Wi-Fi Protected Access 3</td>
+                <td>Segurança avançada em redes Wi-Fi</td>
+            </tr>
+            <tr>
+                <td>HTTPS</td>
+                <td>Hypertext Transfer Protocol Secure</td>
+                <td>Transferência segura de dados na web</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modo Noturno</title>
+    <style>
+        body {
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Estilo padrão (claro) */
+        .light-mode {
+            background-color: #fff;
+            color: #333;
+        }
+
+        /* Estilo do modo noturno (escuro) */
+        .dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Botão de alternância */
+        #toggle-btn {
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="light-mode">
+
+    <h1>Minha Página</h1>
+
+    <!-- Botão de alternância para Modo Noturno/Modo Claro -->
+    <button id="toggle-btn" onclick="toggleMode()">Modo Noturno</button>
+
+    <script>
+        // Função para alternar entre Modo Noturno e Modo Claro
+        function toggleMode() {
+            const body = document.body;
+
+            // Alterna a classe do body para alternar os estilos
+            body.classList.toggle('dark-mode');
+
+            // Atualiza o texto do botão com base no modo atual
+            const toggleBtn = document.getElementById('toggle-btn');
+            const isDarkMode = body.classList.contains('dark-mode');
+            toggleBtn.textContent = isDarkMode ? 'Modo Claro' : 'Modo Noturno';
+        }
+    </script>
+
+</body>
+</html>
