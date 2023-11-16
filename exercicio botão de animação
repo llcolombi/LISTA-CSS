@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão de Verificação com Animação</title>
+    <style>
+        /* Estilo padrão do botão */
+        .verification-button {
+            display: inline-block;
+            position: relative;
+            
+        }
+
+        /* Estilo do círculo de carregamento */
+        .loading-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 24px;
+            height: 24px;
+            border: 3px solid #fff;
+            border-top: 3px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        /* Estilo do botão durante a verificação */
+        .verification-button.verifying {
+            background-color: #00FF00;
+            color: #FFFFFF;
+        }
+
+        /* Mostra o círculo de carregamento quando o botão está no estado de verificação */
+        .verification-button.verifying .loading-circle {
+            opacity: 2;
+        }
+
+        /* Animação do círculo de carregamento */
+        @keyframes spin {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Botão de verificação -->
+    <button class="verification-button" onclick="simularVerificacao()">
+        Verificar
+        <div class="loading-circle"></div>
+    </button>
+
+    <script>
+        // Função para simular a verificação
+        function simularVerificacao() {
+            // Altera a classe do botão para indicar a verificação em andamento
+            const button = document.querySelector('.verification-button');
+            button.classList.add('verifying');
+
+            // Simula um atraso (você pode substituir isso por uma chamada assíncrona real)
+            setTimeout(function() {
+                // Remove a classe de verificação para indicar que a verificação foi concluída
+                button.classList.remove('verifying');
+            }, 2000); // Simula um atraso de 2 segundos
+        }
+    </script>
+
+</body>
+</html>
