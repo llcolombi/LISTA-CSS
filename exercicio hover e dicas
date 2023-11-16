@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Cibersegurança</title>
+    <style>
+        body {
+            font-family: courier, mono space;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFF;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            background-color: #fffff;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        li:hover {
+            background-color: #808080;
+        }
+
+        p {
+            display: none;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            margin: 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        li:hover p {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Termos Comuns de Cibersegurança</h1>
+    </header>
+
+    <ul>
+        <li>VPN
+            <p>VPN é a sigla para "Virtual Private Network" (Rede Virtual Privada, em português), e se refere a uma tecnologia que permite criar uma conexão segura e criptografada entre um dispositivo e uma rede privada ou outro ponto na internet.</p>
+        </li>
+
+        <li>Firewall
+            <p>Um firewall é um componente de segurança de rede que atua como uma barreira entre uma rede privada ou dispositivo e a internet ou outras redes públicas. Sua função principal é controlar o tráfego de rede, permitindo ou bloqueando a passagem de dados com base em um conjunto de regras predefinidas. Os firewalls desempenham um papel crucial na proteção de sistemas e redes contra ameaças de segurança, como intrusões, vírus e acessos não autorizados.</p>
+        </li>
+
+        <li>Phishing
+            <p>Phishing é uma técnica maliciosa e fraudulenta usada por cibercriminosos para enganar pessoas e obter informações confidenciais, como senhas, números de cartão de crédito e outras informações pessoais ou financeiras. O termo "phishing" é uma junção das palavras "password" e "fishing" (pesca), refletindo a ideia de "pescar" informações sensíveis das vítimas.</p>
+        </li>
+    </ul>
+</body>
+</html>
